@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "1069207649541",
+    "project_id": "istock-b6f9b",
+    "storage_bucket": "istock-b6f9b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069207649541:android:6c0270245abb1cfb074b6c",
+        "android_client_info": {
+          "package_name": "com.techcndev.istock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1069207649541-l0ncid0mptcj59ok50dfkikq119k5lff.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.techcndev.istock",
+            "certificate_hash": "eda1c8e2c5b26594173088cf510583d1f9ad296a"
+          }
+        },
+        {
+          "client_id": "1069207649541-p6ofq7p1i8u2ej9lc3qlse50tbnc79t6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.techcndev.istock",
+            "certificate_hash": "aa9de34b3740c94a7854ef4b0ee926363725d885"
+          }
+        },
+        {
+          "client_id": "1069207649541-s9k63svc2kfe5n1v9f7ds2avj5kp4tiv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.techcndev.istock",
+            "certificate_hash": "c4aeef6c0b551eaaf38d9d90636356db9292ed99"
+          }
+        },
+        {
+          "client_id": "1069207649541-4uq1fv873gkh90i54optv6fth29c470k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARsEL3uAFcw5VA3-CM1i0dN6Hw-Jz6Z4g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1069207649541-4uq1fv873gkh90i54optv6fth29c470k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

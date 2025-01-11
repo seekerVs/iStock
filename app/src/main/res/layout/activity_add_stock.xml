@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="440dp"
+    android:layout_gravity="center"
+    android:background="#00FFFFFF">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create your list below"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeableImageView2"
+        app:layout_constraintEnd_toEndOf="@+id/shapeableImageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fill the form:"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView2"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="258dp"
+        android:layout_height="35dp"
+        android:hint="Name of Good/s"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView2"
+        app:layout_constraintVertical_bias="0.102" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeable_green"
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:background="#570ACE7C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/shapeable_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintVertical_bias="0.093">
+
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity - Kg/sack"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeable_green"
+        app:layout_constraintEnd_toEndOf="@+id/shapeable_green"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/shapeable_green"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <ImageButton
+        android:id="@+id/minus_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="#00FFFFFF"
+        android:padding="2dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeable_green"
+        app:layout_constraintEnd_toStartOf="@+id/input_view"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="@+id/shapeable_green"
+        app:layout_constraintTop_toTopOf="@+id/shapeable_green"
+        app:layout_constraintVertical_bias="0.933"
+        app:srcCompat="@drawable/minus_outline" />
+
+    <TextView
+        android:id="@+id/input_view"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeable_green"
+        app:layout_constraintEnd_toEndOf="@+id/shapeable_green"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/shapeable_green"
+        app:layout_constraintTop_toTopOf="@+id/shapeable_green"
+        app:layout_constraintVertical_bias="0.857" />
+
+    <ImageButton
+        android:id="@+id/add_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeable_green"
+        app:layout_constraintEnd_toEndOf="@+id/shapeable_green"
+        app:layout_constraintHorizontal_bias="0.424"
+        app:layout_constraintStart_toEndOf="@+id/input_view"
+        app:layout_constraintTop_toTopOf="@+id/shapeable_green"
+        app:layout_constraintVertical_bias="0.933"
+        app:srcCompat="@drawable/add" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeable_gray"
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:background="#ccccb3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/shapeable_green"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintVertical_bias="0.093">
+
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <TextView
+        android:id="@+id/converter_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Converter - Kilo-Sack"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeable_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/shapeable_gray"
+        app:layout_constraintTop_toTopOf="@+id/shapeable_gray"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <TextView
+        android:id="@+id/kg_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Kilo"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeable_gray"
+        app:layout_constraintEnd_toStartOf="@+id/shapeable_gray"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/shapeable_green"
+        app:layout_constraintTop_toTopOf="@+id/shapeable_gray"
+        app:layout_constraintVertical_bias="0.69" />
+
+    <TextView
+        android:id="@+id/conver_view1"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:text="0"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeable_gray"
+        app:layout_constraintEnd_toStartOf="@+id/equal_text"
+        app:layout_constraintStart_toEndOf="@+id/kg_text"
+        app:layout_constraintTop_toTopOf="@+id/shapeable_gray"
+        app:layout_constraintVertical_bias="0.706" />
+
+    <TextView
+        android:id="@+id/equal_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeable_gray"
+        app:layout_constraintEnd_toStartOf="@+id/conver_view2"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toEndOf="@+id/conver_view1"
+        app:layout_constraintTop_toTopOf="@+id/shapeable_gray"
+        app:layout_constraintVertical_bias="0.698" />
+
+    <TextView
+        android:id="@+id/conver_view2"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:text="0"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeable_gray"
+        app:layout_constraintEnd_toStartOf="@+id/unit_text"
+        app:layout_constraintStart_toEndOf="@+id/equal_text"
+        app:layout_constraintTop_toTopOf="@+id/shapeable_gray"
+        app:layout_constraintVertical_bias="0.706" />
+
+    <TextView
+        android:id="@+id/unit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="(unit)"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeable_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/shapeable_gray"
+        app:layout_constraintTop_toTopOf="@+id/shapeable_gray"
+        app:layout_constraintVertical_bias="0.69" />
+
+    <TextView
+        android:id="@+id/total_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Quantity ="
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/shapeableImageView3"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shapeable_gray"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView3"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:background="@drawable/pink2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shapeable_gray"
+        app:layout_constraintVertical_bias="0.045">
+
+    </com.google.android.material.imageview.ShapeableImageView>
+
+
+    <EditText
+        android:id="@+id/totalquantity"
+        android:layout_width="258dp"
+        android:layout_height="35dp"
+        android:hint="Total Quantity (Kilo/Sack)  (Specify the unit)"
+        android:padding="2dp"
+        android:textSize="13sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintVertical_bias="0.588" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="258dp"
+        android:layout_height="35dp"
+        android:hint="Price"
+        android:textSize="13sp"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalquantity"
+        app:layout_constraintVertical_bias="0.146" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/green2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price"
+        app:layout_constraintVertical_bias="1.0">
+
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <Button
+        android:id="@+id/add_list_btn"
+        style="@style/circle.me"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/white_circle"
+        android:text="add on list"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:padding="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/shapeableImageView4"
+        app:layout_constraintTop_toTopOf="@+id/shapeableImageView4" />
+
+    <Button
+        android:id="@+id/cancel_add_btn"
+        style="@style/red.shape"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/white_circle"
+        android:text="cancel"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:padding="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/shapeableImageView4"
+        app:layout_constraintTop_toTopOf="@+id/shapeableImageView4" />
+
+    <TextView
+        android:id="@+id/total_qty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeableImageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/shapeableImageView3"
+        app:layout_constraintTop_toTopOf="@+id/shapeableImageView3" />
+
+    <Spinner
+        android:id="@+id/unit_spinner"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeable_green"
+        app:layout_constraintEnd_toEndOf="@+id/shapeable_green"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/shapeable_green"
+        app:layout_constraintVertical_bias="0.378" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
