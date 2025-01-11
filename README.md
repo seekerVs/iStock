@@ -51,4 +51,4 @@ Backend Developer: [@SeekerVs](https://github.com/seekerVs)
 </table>
 
 
-RIP Jayson.
+RIP Jayson, Salamat sa lahat!
